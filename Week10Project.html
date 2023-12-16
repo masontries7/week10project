@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel= "stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<br>
+<h1>Grocery List</h1>
+<body class="container">
+ <br>
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+        <div class="col-md">
+            <div class="form-group">
+                <label for="anyItem">Item Name</label>
+                <input type="text" class="form-control" id="anyItem">
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="form-group">
+                <label for="number-at-home">Number At Home</label>
+                <input type="number" class="form-control" id="Quantity-In-Home">
+            
+            </div> 
+        </div>
+</div>
+<div class="row">
+    <div class="col-md">
+        <div class="form-group">
+            <label for="number-needed">Number Needed</label>
+            <input type="number" class="form-control" id="How-Many-More" placeholder="number">
+        </div>
+    </div>
+    <div>
+<button id="add" class="btn btn-primary form-control">Create</button>
+</div>
+</div>
+</div>
+</div>
+<table id="list" class="table table-light table-striped">
+<tr>
+    <th>Item Name</th>
+    <th>Number at Home</th>
+    <th>Number Needed</th>
+    <th>Actions</th>
+</tr>
+</table>
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="todo.js"></script>
+
+</body>
+</html>
